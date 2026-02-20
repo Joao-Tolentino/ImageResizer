@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload & Resize Image</title>
+</head>
+<body>
+<h2>Upload Image</h2>
+<form action="process_image.php" method="post" enctype="multipart/form-data">
+    <label>Select image:</label>
+    <input type="file" name="image" accept="image/*" required><br><br>
+
+    <label>Resize factor (0.1 to 3.0):</label>
+    <input type="number" name="resize" step="0.1" value="1"><br><br>
+
+    <input type="submit" value="Process Image">
+</form>
+</body>
+</html>
